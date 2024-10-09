@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/logo1.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page</title>
+
+
+    <!-- Owl-Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/23412c6a8d.js"></script>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="panel">
+            <div class="row">
+                <div class="col liquid">
+                    <h4><i class="fa-solid fa-gamepad fa-2xl fa-beat-fade"></i> Joki TitipanIlahi</h4>
+
+                    <!-- Owl-Carousel -->
+
+                    <div class="owl-carousel owl-theme">
+                        <img src="img/cr1.png" alt="" class="login_img">
+                        <img src="img/cr2.png" alt="" class="login_img">
+                        <img src="img/cr4.png" alt="" class="login_img">
+                    </div>
+
+                    <!-- /Owl-Carousel -->
+
+                </div>
+                <div class="col login">
+                    <input type="button" value="X" class="btn btn-signup" onclick="alert('Email atau password salah. Silahkan ingat kembali gmail anda! ” ');">    
+                    <a href="hal_admin_datacs.html"type="button" class="btn btn-signup"></button> Admin ?<a>               
+                        <form>
+                            <div class="form-group">
+                                <input type="text" placeholder="Silahkan Isi Email" class="form-input">
+                                <div class="input-icon">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" placeholder="Password" class="form-input">
+                                <div class="input-icon">
+                                    <i class="fa-solid fa-lock"></i>
+                                </div>
+                            </div>
+                            <br><br>
+                            <a href="index/index.html" button type="submit" class="btn btn-login"> Login </button> </a>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function () {
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            items: 1
+        });
+    });
+</script>

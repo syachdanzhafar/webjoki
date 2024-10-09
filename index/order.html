@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="icon" href="images/logo1.png">
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Order Page</title>
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='#' rel='stylesheet'>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        body {
+            background-color: rgb(93, 18, 126)
+        }
+
+        .form-control:focus {
+            color: #495057;
+            background-color: #fff;
+            border-color: #80bdff;
+            outline: 0;
+            box-shadow: 0 0 0 0rem rgba(0, 123, 255, .25)
+        }
+
+        .btn-secondary:focus {
+            box-shadow: 0 0 0 0rem rgba(108, 117, 125, .5)
+        }
+
+        .close:focus {
+            box-shadow: 0 0 0 0rem rgba(108, 117, 125, .5)
+        }
+
+        .mt-200 {
+            margin-top: 200px
+        }
+    </style>
+</head>
+
+<body className='snippet-body'>
+    <link href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/smart_wizard.min.css" rel="stylesheet"
+        type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/smart_wizard_theme_arrows.min.css"
+        rel="stylesheet" type="text/css" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/jquery.smartWizard.min.js"></script>
+
+
+    <div class="container">
+        <a class="btn btn-danger mt-3" href="index.html" role="button"> Home </a>
+        <div class="row d-flex justify-content-center mt-200"> <button type="button" class="btn btn-primary"
+                data-toggle="modal" data-target="#exampleModal"> Lanjut Order </button> </div> <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Lengkapi Data Untuk Melanjutkan Orderan</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span
+                                aria-hidden="true">&times;</span> </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="smartwizard">
+                            <ul>
+                                <li><a href="#step-1">Step 1<br /><small>Informasi Akun</small></a></li>
+                                <li><a href="#step-2">Step 2<br /><small>Pilih Order</small></a></li>
+                                <li><a href="#step-3">Step 3<br /><small>Pembayaran</small></a></li>
+                                <li><a href="#step-4">Step 4<br /><small>Orderan Sedang Diproses</small></a></li>
+                            </ul>
+                            <div class="mt-4">
+                                <div id="step-1">
+                                    <div class="row">
+                                        <div class="col-md-6"> <input type="text" class="form-control"
+                                                placeholder="Email/No. HP" required> </div>
+                                        <div class="col-md-6"> <input type="password" class="form-control"
+                                                placeholder="Password" required> </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6"> <input type="text" class="form-control"
+                                                placeholder="Nomor Whatsapp" required> </div>
+                                        <div class="col-md-6"> <input type="text" class="form-control"
+                                                placeholder="User ID & NickName" required> </div><br>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <select class="custom-select" id="inputGroupSelect02">
+                                                <option selected>Login Via</option>
+                                                <option value="1">Moonton</option>
+                                                <option value="2">Facebook</option>
+                                                <option value="3">Tiktok</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="step-2">
+                                    <div class="row">
+                                        <div class="col-md-6"> <input type="text" class="form-control"
+                                                placeholder="Tulis Orderan ex(epic sampai legends)" required> </div>
+                                    </div>
+                                </div>
+                                <div id="step-3" class="">
+                                    <div class="row">
+                                        <div class="col-md-6"> <input type="text" class="form-control"
+                                                placeholder="OVO (089502302388 an JokiTitipanilahi)" disabled> </div>
+                                        <div class="col-md-6"> <input type="text" class="form-control"
+                                                placeholder="Dana  (089502302388 an JokiTitipanilahi)" disabled> </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6"> <input type="text" class="form-control"
+                                                placeholder="BNI (763281311 an JokiTitipanilahi)" disabled> </div>
+                                        <div class="col-md-6"> <input type="text" class="form-control"
+                                                placeholder="BCA (6655127348 an JokiTitipanilahi)" disabled> </div>
+                                    </div>
+                                </div>
+                                <div id="step-4" class="">
+                                    <div class="row">
+                                        <div class="col-md-12"> <span>Terimakasih sudah menggunakan layanan kami.
+                                                Pesanan anda sedang diproses oleh tim kami. Untuk info lebih lanjut
+                                                silahkan chat ke Customer Services.</span> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type='text/javascript'
+        src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+    <script type='text/javascript' src='#'></script>
+    <script type='text/javascript' src='#'></script>
+    <script type='text/javascript' src='#'></script>
+    <script type='text/javascript'>$(document).ready(function () {
+
+            $('#smartwizard').smartWizard({
+                selected: 0,
+                theme: 'arrows',
+                autoAdjustHeight: true,
+                transitionEffect: 'fade',
+                showStepURLhash: false,
+
+            });
+
+        });</script>
+    <script type='text/javascript'>var myLink = document.querySelector('a[href="#"]');
+        myLink.addEventListener('click', function (e) {
+            e.preventDefault();
+        });</script>
+
+</body>
+
+</html>
